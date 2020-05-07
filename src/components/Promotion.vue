@@ -83,6 +83,7 @@
                 color="primary"
                 type="submit"
                 :disabled="!form_valid"
+                :loading="submitting"
               >
                 Submit
               </v-btn>
