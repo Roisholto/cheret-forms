@@ -8,7 +8,7 @@ export default new Vuex.Store({
   state: {
     services:[
       {title:'publishing', route:{name:'publishing'}},
-      // {title:'launching', route:{name:'launching'}},
+      {title:'launching', route:{name:'launching'}},
       {title:'proofreading', route:{name:'proofreading'}},
       {title:'promotion', route:{name:'promotion'}},
       {title:'writing', route:{name:'writing'}},

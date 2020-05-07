@@ -35,7 +35,7 @@ Vue.use(VueRouter)
       {
         name:'launching',
         path:'launching',
-        component:()=>import(/* webpackChunkName: "about" */ '@/components/Promotion.vue')
+        component:()=>import(/* webpackChunkName: "about" */ '@/components/Launching.vue')
       },
       {
         name:'proofreading',
