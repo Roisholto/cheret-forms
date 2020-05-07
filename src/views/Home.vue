@@ -1,11 +1,12 @@
 <template>
   <v-container class="fill-height">
     <div>
-      <h3 class="mb-3">Hello, what will you like us do for you?</h3>
+      <h3 class="mb-3 headline ">Hello, what would you like us do for you?</h3>
       <v-row>
         <v-col col="12" >
           <v-chip medium color="primary lighten-1"
-            class="mr-3 my-3 text-capitalize font-weight-bold"
+            class="mr-3 my-3 text-capitalize body-1 animated bounce"
+            :style="{animationDelay: (i/2).toString()+'s'}"
             :to="service.route"
             v-for="(service, i) in services"
             :key="i">
