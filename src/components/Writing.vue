@@ -81,6 +81,10 @@ export default {
       let vm = this ;
       let data = Object.assign({}, this.form, {'personal_info':this.personal_info}) ;
       vm.submitting = true ;
+      if(!this.$refs.form01.validate()){
+        return ;
+      }
+
       submit('writing', data)
         .then(function(r){
           return r.json() ;
