@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div style="width:600px">
     <v-breadcrumbs :items="breadcrumb"/>
     <v-form ref="form01" v-model="form_valid" @submit.prevent="submit">
-      <v-card width="600" :loading="submitting">
+      <v-card :loading="submitting">
         <v-card-title></v-card-title>
 
         <v-card-text>
